@@ -15,7 +15,7 @@ struct FormModel {
     var input: String
     var errorMessage: String
     
-    init(type: FormType, input: String, errorMessage: String) {
+    init(type: FormType, input: String = "", errorMessage: String = "") {
         self.type = type
         self.label = type.rawValue
         self.input = input
@@ -25,10 +25,10 @@ struct FormModel {
 
 class ContentVM: ObservableObject {
     
-    @Published var firstName: FormModel = FormModel(type: .firstName, input: "", errorMessage: "")
-    @Published var lastName: FormModel = FormModel(type: .lastName, input: "", errorMessage: "")
-    @Published var email: FormModel = FormModel(type: .email, input: "", errorMessage: "")
-    @Published var password: FormModel = FormModel(type: .password, input: "", errorMessage: "")
+    @Published var firstName: FormModel = FormModel(type: .firstName)
+    @Published var lastName: FormModel = FormModel(type: .lastName)
+    @Published var email: FormModel = FormModel(type: .email)
+    @Published var password: FormModel = FormModel(type: .password)
     
     func hitSomeAPIValidation() {
         self.firstName.errorMessage = "Error model first name dari api"
