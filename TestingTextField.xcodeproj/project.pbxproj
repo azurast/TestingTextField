@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B555858293453DF00BC3C94 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B555857293453DF00BC3C94 /* ErrorMessage.swift */; };
+		A5695445292DEADE00177946 /* RegularTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5695444292DEADE00177946 /* RegularTextField.swift */; };
+		A5695447292DEF6D00177946 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5695446292DEF6D00177946 /* FormValidation.swift */; };
+		A5695449292DF2DC00177946 /* ValidatedPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5695448292DF2DC00177946 /* ValidatedPropertyWrapper.swift */; };
+		A569544B292DF7BB00177946 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569544A292DF7BB00177946 /* ContentViewModel.swift */; };
 		A5DCCF6C292DE8AB00408940 /* TestingTextFieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DCCF6B292DE8AB00408940 /* TestingTextFieldApp.swift */; };
 		A5DCCF6E292DE8AB00408940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DCCF6D292DE8AB00408940 /* ContentView.swift */; };
 		A5DCCF70292DE8AF00408940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DCCF6F292DE8AF00408940 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B555857293453DF00BC3C94 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		A5695444292DEADE00177946 /* RegularTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTextField.swift; sourceTree = "<group>"; };
+		A5695446292DEF6D00177946 /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		A5695448292DF2DC00177946 /* ValidatedPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedPropertyWrapper.swift; sourceTree = "<group>"; };
+		A569544A292DF7BB00177946 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		A5DCCF68292DE8AB00408940 /* TestingTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DCCF6B292DE8AB00408940 /* TestingTextFieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingTextFieldApp.swift; sourceTree = "<group>"; };
 		A5DCCF6D292DE8AB00408940 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,8 +63,13 @@
 			children = (
 				A5DCCF6B292DE8AB00408940 /* TestingTextFieldApp.swift */,
 				A5DCCF6D292DE8AB00408940 /* ContentView.swift */,
+				A569544A292DF7BB00177946 /* ContentViewModel.swift */,
 				A5DCCF6F292DE8AF00408940 /* Assets.xcassets */,
 				A5DCCF71292DE8AF00408940 /* Preview Content */,
+				A5695444292DEADE00177946 /* RegularTextField.swift */,
+				A5695446292DEF6D00177946 /* FormValidation.swift */,
+				A5695448292DF2DC00177946 /* ValidatedPropertyWrapper.swift */,
+				1B555857293453DF00BC3C94 /* ErrorMessage.swift */,
 			);
 			path = TestingTextField;
 			sourceTree = "<group>";
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5695449292DF2DC00177946 /* ValidatedPropertyWrapper.swift in Sources */,
+				1B555858293453DF00BC3C94 /* ErrorMessage.swift in Sources */,
 				A5DCCF6E292DE8AB00408940 /* ContentView.swift in Sources */,
+				A569544B292DF7BB00177946 /* ContentViewModel.swift in Sources */,
 				A5DCCF6C292DE8AB00408940 /* TestingTextFieldApp.swift in Sources */,
+				A5695447292DEF6D00177946 /* FormValidation.swift in Sources */,
+				A5695445292DEADE00177946 /* RegularTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +325,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
